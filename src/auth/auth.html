@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Пример сайта</title>
+</head>
+<body>
+<div id="card-container" class="bg-background-main flex justify-center items-center h-screen font-tilda">
+  <div id="card-content" class="bg-background-card rounded-[32px] w-[360px] h-[488px] shadow-card">
+    <div id="card-header" class="flex gap-[12px] p-[4px] items-center h-[56px]">
+      <div id="header-img-container" class="w-[48px] h-[48px] justify-center items-center flex">
+        <img src="./img/person_+fill.svg" alt="person">
+      </div>
+      <p class="font-bold text-lg">
+        Вход для сотрудников
+      </p>
+    </div>
+    <div id="card-inputs" class="flex flex-col justify-center items-center h-[304px]">
+      <div id="card-logo-container" class="flex justify-center items-center h-[136px]">
+        <img src="./img/logo.svg" alt="logo">
+      </div>
+      <div id="card-inputs-container" class="flex flex-col gap-[16px] items-center">
+        <input placeholder="Логин" type="text" class="bg-input rounded-[16px] h-[48px] px-[16px] w-[240px]">
+        <input placeholder="Пароль" type="text" class="bg-input rounded-[16px] h-[48px] px-[16px] w-[240px]">
+      </div>
+    </div>
+    <div id="card-footer-container" class="flex flex-col justify-center items-center p-[16px] gap-[16px] mt-auto">
+      <button class="bg-Red rounded-[16px] h-[48px] px-[16px] w-[240px] text-white">Войти</button>
+      <p class="text-sm text-center text-additional-text">
+        Продолжая, вы соглашаетесь на <a href="" class="text-Red hover:underline"> обработку персональных данных</a> и <a href="" class="text-Red hover:underline">условия пользовательского соглашения</a>
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
