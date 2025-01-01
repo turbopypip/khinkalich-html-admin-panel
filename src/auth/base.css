@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Tilda Sans VF';
+    src: url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff2') format('woff2'),
+         url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }

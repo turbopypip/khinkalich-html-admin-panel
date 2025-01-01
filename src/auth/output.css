@@ -554,20 +554,16 @@ video {
   display: none;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .flex {
   display: flex;
 }
 
-.h-\[136px\] {
-  height: 136px;
-}
-
 .h-\[304px\] {
   height: 304px;
+}
+
+.h-\[44px\] {
+  height: 44px;
 }
 
 .h-\[488px\] {
@@ -598,6 +594,10 @@ video {
   width: 48px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -610,12 +610,16 @@ video {
   justify-content: center;
 }
 
-.gap-\[12px\] {
-  gap: 12px;
-}
-
 .gap-\[16px\] {
   gap: 16px;
+}
+
+.gap-\[4px\] {
+  gap: 4px;
+}
+
+.gap-\[8px\] {
+  gap: 8px;
 }
 
 .rounded-\[16px\] {
@@ -646,6 +650,10 @@ video {
   padding: 16px;
 }
 
+.p-\[32px\] {
+  padding: 32px;
+}
+
 .p-\[4px\] {
   padding: 4px;
 }
@@ -653,6 +661,14 @@ video {
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.pb-\[6px\] {
+  padding-bottom: 6px;
+}
+
+.pt-\[6px\] {
+  padding-top: 6px;
 }
 
 .text-center {
@@ -677,8 +693,16 @@ video {
   font-weight: 700;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .text-Red {
   color: rgba(141, 25, 29, 1);
+}
+
+.text-additional-text {
+  color: rgba(128, 128, 128, 1);
 }
 
 .text-white {
@@ -686,14 +710,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-additional-text {
-  color: rgba(128, 128, 128, 1);
-}
-
 .shadow-card {
   --tw-shadow: 0px 18px 30px 0px rgba(51, 51, 51, 0.5);
   --tw-shadow-colored: 0px 18px 30px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@font-face {
+  font-family: 'Tilda Sans VF';
+
+  src: url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff2') format('woff2'),
+         url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
 }
 
 .hover\:underline:hover {

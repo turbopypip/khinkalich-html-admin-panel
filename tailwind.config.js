@@ -12,7 +12,6 @@ module.exports = {
       },
       fontFamily: {
         tilda: ['Tilda Sans VF', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
       },
       fontSize: {
         sm: ['12px', '16px'],
