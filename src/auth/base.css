@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* fonts */
 @font-face {
     font-family: 'Tilda Sans VF';
     src: url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff2') format('woff2'),
