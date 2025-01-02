@@ -2,8 +2,4 @@
 node_modules
 **/.DS_Store
 .idea
-<<<<<<< Updated upstream
-src/**/output.css
-=======
 **/output.css
->>>>>>> Stashed changes
