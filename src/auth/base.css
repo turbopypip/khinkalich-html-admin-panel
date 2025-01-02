@@ -5,7 +5,8 @@
 @font-face {
     font-family: 'Tilda Sans VF';
     src: url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff2') format('woff2'),
-         url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff') format('woff');
+         url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff') format('woff'),
+         url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
   }

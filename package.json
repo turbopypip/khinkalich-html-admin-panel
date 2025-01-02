@@ -5,6 +5,6 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "build": "tailwindcss -i src/auth/styles.css -o src/auth/dist/styles.css --watch"
+    "build": "tailwindcss -i src/auth/base.css -o src/auth/output.css --watch"
   }
 }
