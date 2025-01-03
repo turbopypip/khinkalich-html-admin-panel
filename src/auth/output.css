@@ -598,26 +598,6 @@ video {
   width: 100%;
 }
 
-.w-\[full\] {
-  width: full;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[32\] {
-  width: 32;
-}
-
-.w-\[328\] {
-  width: 328;
-}
-
-.w-\[328px\] {
-  width: 328px;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -742,7 +722,8 @@ video {
   font-family: 'Tilda Sans VF';
 
   src: url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff2') format('woff2'),
-         url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff') format('woff');
+         url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.woff') format('woff'),
+         url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF.ttf') format('woff');
 
   font-weight: normal;
 

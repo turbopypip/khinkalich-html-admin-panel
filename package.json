@@ -5,6 +5,7 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "build": "tailwindcss -i src/auth/base.css -o src/auth/output.css --watch"
+    "build-auth": "tailwindcss -i src/auth/base.css -o src/auth/output.css --watch",
+    "build-iiko": "tailwindcss -i src/iiko/base.css -o src/iiko/output.css --watch"
   }
 }
