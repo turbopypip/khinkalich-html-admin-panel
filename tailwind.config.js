@@ -15,6 +15,7 @@ module.exports = {
         'text-black': 'rgba(17, 17, 17, 1)',
         'text-search-gray': 'rgba(153, 153, 153, 1)',
         'Yellow': 'rgba(253, 203, 61, 1)',
+        'Green-disabled': 'rgba(191, 214, 188, 1)',
       },
       fontFamily: {
         tilda: ['Tilda Sans VF'],
