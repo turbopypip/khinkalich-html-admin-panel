@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>iiko</title>
+  </head>
+  <body>
+    <div class="bg-background-main min-h-screen flex font-tilda justify-center">
+      <aside
+        class="h-screen py-[44px] px-[32px] gap-[32px] flex flex-col sticky top-0"
+      >
+        <div class="flex items-center gap-[16px] h-fit">
+          <img
+            src="./img/logo-frame.svg"
+            alt="logo"
+            class="w-[52px] h-[52px]"
+          />
+          <h1 class="font-bold text-xl text-text-black">Админка СХ</h1>
+        </div>
+        <div class="flex flex-col gap-[8px] text-text-buttons-gray">
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] bg-sidebar-focus-button font-semibold text-buttons2020"
+          >
+            <img
+              src="./img/iiko+fill.svg"
+              alt="iiko-logo"
+              class="w-[24px] h-[24px]"
+            />
+            iiko
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020"
+          >
+            <img
+              src="./img/store_+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заведения
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020"
+          >
+            <img
+              src="./img/picture+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Баннеры
+          </button>
+
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020"
+          >
+            Группы
+          </button>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020"
+          >
+            Отображение
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020"
+          >
+            <img
+              src="./img/khinkalibasket.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заказы
+          </button>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="px-[16px] text-lg font-bold text-text-black">Admin</p>
+          <button
+            class="flex items-center gap-[4px] px-[16px] py-[4px] text-lg font-semibold text-text-buttons-gray"
+          >
+            Выйти
+            <img
+              src="./img/logout.svg"
+              alt="logout"
+              class="w-[24px] h-[24px]"
+            />
+          </button>
+        </div>
+      </aside>
+
+      <div class="h-screen py-[44px] px-[4px] w-fit sticky top-0">
+        <div class="h-full w-[1px] bg-divider"></div>
+      </div>
+
+      <main
+        class="flex flex-col gap-[16px] w-full max-w-[1248px] py-[44px] px-[32px]"
+      >
+        <div
+          class="flex flex-col gap-[16px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <div class="flex items-center justify-between">
+            <h1 class="text-xl font-bold">Oбновление Айко</h1>
+            <div
+              class="flex items-center gap-[4px] px-[16px] py-[8px] rounded-[12px] bg-input"
+            >
+              <input
+                placeholder="Поиск"
+                type="text"
+                class="h-[24px] rounded-[4px] bg-input text-text-search-gray font-normal"
+              />
+              <img
+                src="./img/search.svg"
+                alt="search"
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+          </div>
+          <button
+            class="flex items-center w-fit h-[48px] gap-[4px] px-[16px] py-[8px] rounded-[12px] bg-Red text-white font-semibold text-buttons2020"
+          >
+            Обновить меню
+          </button>
+        </div>
+        <div
+          class="flex flex-col gap-[16px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <h1 class="text-xl font-bold">
+            СХ Адлер Кирова - 8324ab10-fc52-405f-b4ad-245edf319766
+          </h1>
+          <div class="flex gap-[16px]">
+            <div class="flex items-center gap-[8px] w-[328px]">
+              <p class="font-bold text-restaurant_info text-text-black">
+                Информация о точке
+              </p>
+              <button
+                class="bg-background-main px-[16px] py-[4px] rounded-[12px] text-text-buttons-gray"
+              >
+                Показать
+              </button>
+            </div>
+            <div class="flex items-center gap-[8px] w-[328px]">
+              <p class="font-bold text-restaurant_info text-text-black">
+                Меню из iikoOffice
+              </p>
+              <button
+                class="bg-background-main px-[16px] py-[4px] rounded-[12px] text-text-buttons-gray"
+              >
+                Показать
+              </button>
+            </div>
+          </div>
+          <div class="flex items-center gap-[8px]">
+            <button
+              class="h-[44px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-lg font-semibold"
+            >
+              Выгрузка на сайт
+            </button>
+            <input
+              type="text"
+              placeholder="https://хинкалыч.рф/api/webhook/webhooks"
+              class="w-[328px] h-[44px] bg-input text-text-search-gray font-normal text-base px-[16px] py-[8px] rounded-[14px]"
+            />
+            <button
+              class="h-[44px] bg-Yellow px-[16px] py-[4px] rounded-[12px] text-text-black text-lg font-semibold"
+            >
+              Обновить хуки
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[16px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <h1 class="text-xl font-bold">
+            СХ Алушта Ленина - 8e118b94-5883-489f-b3da-aafd5781fdd4
+          </h1>
+          <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[8px] w-[328px]">
+              <div class="flex items-center gap-[8px]">
+                <p class="font-bold text-restaurant_info text-text-black">
+                  Информация о точке
+                </p>
+                <button
+                  class="bg-background-main px-[16px] py-[4px] rounded-[12px] text-text-buttons-gray"
+                >
+                  Показать
+                </button>
+              </div>
+              <div
+                class="bg-input rounded-[14px] px-[16px] py-[10px] font-normal"
+              >
+                <ul class="flex flex-col gap-[4px] list-disc list-inside">
+                  <li>id терминала - 070b6879-aede-4345-bb28-3780ab7d5716</li>
+                  <li>адрес - Алушта, ул. Ленина, 15*</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[8px] w-[328px] h-fit">
+              <div class="flex items-center gap-[8px]">
+                <p class="font-bold text-restaurant_info text-text-black">
+                  Меню из iikoOffice
+                </p>
+                <button
+                  class="bg-background-main px-[16px] py-[4px] rounded-[12px] text-text-buttons-gray"
+                >
+                  Показать
+                </button>
+              </div>
+              <div
+                class="bg-input rounded-[14px] px-[16px] py-[10px] font-normal"
+              >
+                <ul class="flex flex-col gap-[4px] list-disc list-inside">
+                  <li>ревизия - 1710234104273</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-[8px]">
+            <button
+              class="h-[44px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-lg font-semibold"
+            >
+              Выгрузка на сайт
+            </button>
+            <input
+              type="text"
+              placeholder="https://хинкалыч.рф/api/webhook/webhooks"
+              class="w-[328px] h-[44px] bg-input text-text-search-gray font-normal text-base px-[16px] py-[8px] rounded-[14px]"
+            />
+            <button
+              class="h-[44px] bg-Yellow px-[16px] py-[4px] rounded-[12px] text-text-black text-lg font-semibold"
+            >
+              Обновить хуки
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[16px] w-full bg-Green-disabled rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <h1 class="text-xl font-bold">
+            СХ Анапа Горького - aaa33897-fa94-4e85-a640-cca71d434820
+          </h1>
+          <div class="flex gap-[16px]">
+            <div class="flex flex-col gap-[8px] w-[328px]">
+              <div class="flex items-center gap-[8px]">
+                <p class="font-bold text-restaurant_info text-text-black">
+                  Информация о точке
+                </p>
+                <button
+                  class="bg-background-main px-[16px] py-[4px] rounded-[12px] text-text-buttons-gray"
+                >
+                  Показать
+                </button>
+              </div>
+              <div
+                class="bg-input rounded-[14px] px-[16px] py-[10px] font-normal"
+              >
+                <p class="text-Red font-bold text-lg">
+                  Ошибка в iiko (адрес не заполнен или нет терминала)
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[8px] w-[328px] h-fit">
+              <div class="flex items-center gap-[8px]">
+                <p class="font-bold text-restaurant_info text-text-black">
+                  Меню из iikoOffice
+                </p>
+                <button
+                  class="bg-background-main px-[16px] py-[4px] rounded-[12px] text-text-buttons-gray"
+                >
+                  Показать
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-[8px]">
+            <button
+              class="h-[44px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-lg font-semibold"
+            >
+              Выгрузка на сайт
+            </button>
+            <input
+              type="text"
+              placeholder="https://хинкалыч.рф/api/webhook/webhooks"
+              class="w-[328px] h-[44px] bg-input text-text-search-gray font-normal text-base px-[16px] py-[8px] rounded-[14px]"
+            />
+            <button
+              class="h-[44px] bg-Yellow px-[16px] py-[4px] rounded-[12px] text-text-black text-lg font-semibold"
+            >
+              Обновить хуки
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

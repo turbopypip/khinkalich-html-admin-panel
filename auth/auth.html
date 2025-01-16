@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Авторизация</title>
+  </head>
+  <body>
+    <div
+      class="bg-background-main flex justify-center items-center h-screen font-tilda"
+    >
+      <div
+        class="bg-background-card rounded-[32px] w-[360px] h-[488px] shadow-auth-card"
+      >
+        <div class="flex items-center h-[56px]">
+          <div
+            class="w-[48px] h-[48px] justify-center items-center flex gap-[4px] p-[4px]"
+          >
+            <img src="./img/person_+fill.svg" alt="person" />
+          </div>
+          <p class="font-bold text-lg">Вход для сотрудников</p>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center h-[304px]"
+        >
+          <div
+            class="flex justify-center items-center p-[32px]"
+          >
+            <img src="./img/logo.svg" alt="logo" />
+          </div>
+          <div
+            class="flex flex-col gap-[16px] items-center p-[32px]"
+          >
+            <input
+              placeholder="Логин"
+              type="text"
+              class="bg-input rounded-[16px] h-[44px] px-[16px] w-[240px]"
+            />
+            <input
+              placeholder="Пароль"
+              type="text"
+              class="bg-input rounded-[16px] h-[44px] px-[16px] w-[240px]"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center gap-[8px] p-[16px]"
+        >
+          <button class="bg-Red rounded-[16px] h-[44px] w-full text-white">
+            Войти
+          </button>
+          <p
+            class="text-sm text-center text-additional-text pt-[6px] pb-[6px] font-normal"
+          >
+            Продолжая, вы соглашаетесь на
+            <a href="" class="text-Red hover:underline font-normal">
+              обработку персональных данных</a
+            >
+            и
+            <a href="" class="text-Red hover:underline font-normal"
+              >условия пользовательского соглашения</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
