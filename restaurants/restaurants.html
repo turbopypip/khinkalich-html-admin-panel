@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Restaurants</title>
+  </head>
+  <body>
+    <div class="bg-background-main min-h-screen flex font-tilda justify-center">
+      <aside
+        class="h-screen py-[44px] px-[32px] gap-[32px] flex flex-col sticky top-0"
+      >
+        <div class="flex items-center gap-[16px] h-fit">
+          <img
+            src="./img/logo-frame.svg"
+            alt="logo"
+            class="w-[52px] h-[52px]"
+          />
+          <h1 class="font-bold text-xl text-text-black">Админка СХ</h1>
+        </div>
+        <div class="flex flex-col gap-[8px] text-text-buttons-gray">
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/iiko+fill.svg"
+              alt="iiko-logo"
+              class="w-[24px] h-[24px]"
+            />
+            iiko
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/store_+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заведения
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/picture+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Баннеры
+          </button>
+
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            Группы
+          </button>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            Отображение
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/khinkalibasket.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заказы
+          </button>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="px-[16px] text-lg font-bold text-text-black">Admin</p>
+          <button
+            class="flex items-center gap-[4px] px-[16px] py-[4px] text-lg font-semibold text-text-buttons-gray rounded-[12px] transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+          >
+            Выйти
+            <img
+              src="./img/logout.svg"
+              alt="logout"
+              class="w-[24px] h-[24px]"
+            />
+          </button>
+        </div>
+      </aside>
+
+      <div class="h-screen py-[44px] px-[4px] w-fit sticky top-0">
+        <div class="h-full w-[1px] bg-divider"></div>
+      </div>
+
+      <main
+        class="flex flex-col gap-[16px] w-full max-w-[1248px] py-[44px] px-[32px]"
+      >
+        <div
+          class="flex flex-col gap-[16px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <div class="flex items-center justify-between">
+            <h1 class="text-xl font-bold">Заведения</h1>
+            <div
+              tabindex="0"
+              class="text-text-black flex items-center gap-[4px] px-[16px] py-[8px] rounded-[12px] border-[1px] border-color-input border-solid bg-color-input transition duration-1 ease-out hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus-within:border-black/40 focus:outline-none"
+            >
+              <input
+                tabindex="0"
+                placeholder="Поиск"
+                type="text"
+                class="p-1 h-[24px] rounded-[4px] bg-color-input font-normal focus:outline-none"
+              />
+              <img
+                src="./img/search.svg"
+                alt="search"
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+          </div>
+          <div class="flex gap-[8px]">
+            <button
+              class="flex items-center w-fit h-[44px] gap-[4px] px-[16px] py-[4px] rounded-[12px] bg-Red text-white font-semibold text-lg hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+            >
+              Обновить меню
+              <img src="./img/add.svg" alt="add" />
+            </button>
+            <button
+              class="flex items-center w-fit h-[44px] gap-[4px] px-[16px] py-[4px] rounded-[12px] bg-Red text-white font-semibold text-lg hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+            >
+              Добавить точку
+              <img src="./img/add.svg" alt="add" />
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[16px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <!-- Переключатель -->
+          <label class="relative inline-block w-fit h-fit cursor-pointer">
+            <!-- Скрытый чекбокс -->
+            <input type="checkbox" class="peer hidden" />
+            <!-- Фон переключателя -->
+            <span
+              class="block p-[2px] w-[56px] h-[32px] rounded-[16px] bg-Black-to-White/White-80 peer-checked:bg-Green transition-colors"
+            ></span>
+            <!-- Кружок с иконкой -->
+            <span
+              class="w-[28px] h-[28px] absolute top-1/2 left-[2px] -translate-y-1/2 rounded-[28px] p-[4px] bg-white peer-checked:left-[26px] transition-all flex items-center justify-center"
+            >
+              <!-- SVG иконка -->
+              <img
+                src="./img/visibility_on+fill.svg"
+                class="h-[24px] w-[24px]"
+                alt="visible"
+              />
+            </span>
+          </label>
+        </div>
+        <div
+          class="flex flex-col gap-[32px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <div class="flex gap-[8px]">
+            <h1 class="text-xl font-bold">Алушта</h1>
+
+            <!-- Переключатель -->
+            <label class="relative inline-block w-fit h-fit cursor-pointer">
+              <!-- Скрытый чекбокс -->
+              <input type="checkbox" class="peer hidden" />
+              <!-- Фон переключателя -->
+              <span
+                class="block p-[2px] w-[56px] h-[32px] rounded-[16px] bg-Black-to-White/White-80 peer-checked:bg-Green transition-colors"
+              ></span>
+              <!-- Кружок с иконкой -->
+              <span
+                class="w-[28px] h-[28px] absolute top-1/2 left-[2px] -translate-y-1/2 rounded-[28px] p-[4px] bg-white peer-checked:left-[26px] transition-all flex items-center justify-center"
+              >
+                <!-- SVG иконка -->
+                <img
+                  src="./img/visibility_on+fill.svg"
+                  class="h-[24px] w-[24px]"
+                  alt="visible"
+                />
+              </span>
+            </label>
+          </div>
+          <div class="flex flex-col w-full gap-[16px]">
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px] w-full flex justify-between"
+            >
+              <p class="font-bold text-lg">ул. Набережная, 18</p>
+              <img
+                src="img/shoppingcartoff+fill.svg"
+                alt="striked basket"
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px] w-full flex justify-between"
+            >
+              <p class="font-bold text-lg">ул. Ленина, 15</p>
+              <img
+                src="./img/visibility_off+fill.svg"
+                alt="visibility off"
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px] w-full flex justify-between"
+            >
+              <p class="font-bold text-lg">Парк аттракционов «Авангард»</p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px] w-full flex justify-between"
+            >
+              <p class="font-bold text-lg">ТРК «MEGANOM»</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
