@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Banners display/add organization</title>
+  </head>
+  <body class="overflow-hidden">
+    <div class="bg-background-main min-h-screen flex font-tilda justify-center">
+      <aside
+        class="h-screen py-[44px] px-[32px] gap-[32px] flex flex-col sticky top-0"
+      >
+        <div class="flex items-center gap-[16px] h-fit">
+          <img
+            src="./img/logo-frame.svg"
+            alt="logo"
+            class="w-[52px] h-[52px]"
+          />
+          <h1 class="font-bold text-xl text-text-black">Админка СХ</h1>
+        </div>
+        <div class="flex flex-col gap-[8px] text-text-buttons-gray">
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/iiko+fill.svg"
+              alt="iiko-logo"
+              class="w-[24px] h-[24px]"
+            />
+            iiko
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/store_+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заведения
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/picture+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Баннеры
+          </button>
+
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            Группы
+          </button>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            Отображение
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/khinkalibasket.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заказы
+          </button>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="px-[16px] text-lg font-bold text-text-black">Admin</p>
+          <button
+            class="flex items-center gap-[4px] px-[16px] py-[4px] text-lg font-semibold text-text-buttons-gray rounded-[12px] transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+          >
+            Выйти
+            <img
+              src="./img/logout.svg"
+              alt="logout"
+              class="w-[24px] h-[24px]"
+            />
+          </button>
+        </div>
+      </aside>
+
+      <div class="h-screen py-[44px] px-[4px] w-fit sticky top-0">
+        <div class="h-full w-[1px] bg-divider"></div>
+      </div>
+
+      <!-- MODAL -->
+      <div
+        class="fixed x-0 y-0 flex justify-center items-center min-h-screen w-screen bg-Background-modal backdrop-blur-modal"
+      >
+        <div
+          class="overflow-auto flex flex-col gap-[16px] max-h-[90vh] max-w-[1200px] bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <div class="flex justify-between items-center">
+            <h1 class="text-xl font-bold">
+              Добавить организацию в отображение баннеров
+            </h1>
+            <button
+              class="flex justify-center items-center w-[48px] h-[48px] bg-background-card text-text-buttons-gray text-restaurant_info font-semibold transition duration-1 ease-out hover:text-Red/Red-Hover active:text-Red/Red-Click"
+            >
+              <img src="./img/close.svg" alt="add" class="w-[24px] h-[24px]" />
+            </button>
+          </div>
+          <div
+            tabindex="0"
+            class="text-text-black flex items-center w-[328px] gap-[4px] px-[16px] py-[8px] rounded-[12px] border-[1px] border-color-input border-solid bg-color-input transition duration-1 ease-out hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus-within:border-black/40 focus:outline-none"
+          >
+            <input
+              tabindex="0"
+              placeholder="Выбрать точку"
+              class="min-w-0 flex-1 p-1 h-[24px] rounded-[4px] bg-color-input font-normal focus:outline-none appearance-none"
+            />
+            <img
+              src="./img/keyboard_arrow_down.svg"
+              alt="arrow down"
+              class="w-[24px] h-[24px] flex-shrink-0"
+            />
+          </div>
+          <h1 class="text-xl font-bold">Группы баннеров</h1>
+          <div class="grid grid-cols-3 gap-[16px]">
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Акция</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/khinkali_with_pink_salmon_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-col p-[8px] w-full items-center justify-center gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+              >
+                <button
+                  class="self-center flex justify-center items-center min-w-[44px] w-fit h-[44px] p-[4px] rounded-[12px] bg-background-main transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+                >
+                  <img
+                    src="./img/add.svg"
+                    alt="delete"
+                    class="w-[24px] h-[24px]"
+                  />
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Постоянные 3шт</h2>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/12_khinkali_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/khinkali_tail_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-col p-[8px] w-full items-center justify-center gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+              >
+                <button
+                  class="self-center flex justify-center items-center min-w-[44px] w-fit h-[44px] p-[4px] rounded-[12px] bg-background-main transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+                >
+                  <img
+                    src="./img/add.svg"
+                    alt="delete"
+                    class="w-[24px] h-[24px]"
+                  />
+                </button>
+              </div>
+              <button
+                class="flex items-center justify-center w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+              >
+                <img
+                  src="./img/add_white.svg"
+                  alt="add"
+                  class="w-[16px] h-[16px]"
+                />
+                Добавить баннер
+              </button>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Открытие</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/Saransk_opening_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Сезонное</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/summer_menu_banner.png"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Дюжина 3 города</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/12_new_dishes_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Детское</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/children_menu_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Доставка</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/free_delivery_banner.png"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <button
+              class="flex justify-center items-center w-fit h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-background-card text-text-buttons-gray text-lg font-semibold transition duration-1 ease-out hover:text-Red/Red-Hover active:text-Red/Red-Click"
+            >
+              Отменить
+            </button>
+
+            <div class="flex gap-[16px]">
+              <button
+                class="flex justify-center items-center h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-background-main text-text-buttons-gray text-lg font-semibold transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+              >
+                <img
+                  src="./img/delete.svg"
+                  alt="delete"
+                  class="w-[24px] h-[24px]"
+                />
+                Удалить
+              </button>
+              <button
+                class="self-end flex items-center justify-center min-w-fit h-[44px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-lg font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+              >
+                <img
+                  src="./img/save+fill.svg"
+                  alt="add"
+                  class="w-[24px] h-[24px]"
+                />
+                Сохранить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--MODAL END-->
+
+      <main
+        class="flex flex-col gap-[16px] w-full max-w-[1248px] py-[44px] px-[32px]"
+      >
+        <div class="flex justify-between">
+          <h1 class="text-text3236 font-bold">Заведения</h1>
+          <div
+            tabindex="0"
+            class="text-text-black flex items-center min-w-[220px] max-w-[328px] gap-[4px] px-[16px] py-[8px] rounded-[12px] border-[1px] border-color-input border-solid bg-color-input transition duration-1 ease-out hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus-within:border-black/40 focus:outline-none"
+          >
+            <input
+              tabindex="0"
+              placeholder="Поиск"
+              type="text"
+              class="p-1 h-[24px] rounded-[4px] bg-color-input font-normal focus:outline-none"
+            />
+            <img
+              src="./img/search.svg"
+              alt="search"
+              class="w-[24px] h-[24px]"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[32px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <h1 class="text-text3236 font-bold">Фильтры</h1>
+          <div class="grid grid-cols-3 gap-[44px]">
+            <div class="flex flex-col gap-[16px] col-span-1">
+              <h2 class="text-xl font-bold">Общая</h2>
+              <div class="flex flex-col gap-[8px]">
+                <label>
+                  <input type="checkbox" class="peer hidden" />
+                  <div
+                    class="flex items-center justify-between w-fit h-[44px] gap-[8px] px-[16px] py-[4px] rounded-[24px] text-Black-to-White/White-30 text-text-lg font-normal cursor-pointer border-[1px] border-Black-to-White/White-85 peer-checked:border-Green peer-checked:border-[2px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                  >
+                    <p>Акция</p>
+                  </div>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer hidden" />
+                  <div
+                    class="flex items-center justify-between w-fit h-[44px] gap-[8px] px-[16px] py-[4px] rounded-[24px] text-Black-to-White/White-30 text-text-lg font-normal cursor-pointer border-[1px] border-Black-to-White/White-85 peer-checked:border-Green peer-checked:border-[2px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                  >
+                    <p>Постоянные 3шт</p>
+                  </div>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer hidden" />
+                  <div
+                    class="flex items-center justify-between w-fit h-[44px] gap-[8px] px-[16px] py-[4px] rounded-[24px] text-Black-to-White/White-30 text-text-lg font-normal cursor-pointer border-[1px] border-Black-to-White/White-85 peer-checked:border-Green peer-checked:border-[2px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                  >
+                    <p>Открытие</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[16px] col-span-1">
+              <h2 class="text-xl font-bold">Меню</h2>
+              <div class="flex flex-col gap-[8px]">
+                <label>
+                  <input type="checkbox" class="peer hidden" />
+                  <div
+                    class="flex items-center justify-between w-fit h-[44px] gap-[8px] px-[16px] py-[4px] rounded-[24px] text-Black-to-White/White-30 text-text-lg font-normal cursor-pointer border-[1px] border-Black-to-White/White-85 peer-checked:border-Green peer-checked:border-[2px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                  >
+                    <p>Сезонное</p>
+                  </div>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer hidden" />
+                  <div
+                    class="flex items-center justify-between w-fit h-[44px] gap-[8px] px-[16px] py-[4px] rounded-[24px] text-Black-to-White/White-30 text-text-lg font-normal cursor-pointer border-[1px] border-Black-to-White/White-85 peer-checked:border-Green peer-checked:border-[2px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                  >
+                    <p>Детское</p>
+                  </div>
+                </label>
+                <label>
+                  <input type="checkbox" class="peer hidden" />
+                  <div
+                    class="flex items-center justify-between w-fit h-[44px] gap-[8px] px-[16px] py-[4px] rounded-[24px] text-Black-to-White/White-30 text-text-lg font-normal cursor-pointer border-[1px] border-Black-to-White/White-85 peer-checked:border-Green peer-checked:border-[2px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                  >
+                    <p>Региональное меню - КРЫМ</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[16px] col-span-1">
+              <h2 class="text-xl font-bold">Доставка</h2>
+              <div class="flex flex-col gap-[8px]">
+                <label>
+                  <input type="checkbox" class="peer hidden" />
+                  <div
+                    class="flex items-center justify-between w-fit h-[44px] gap-[8px] px-[16px] py-[4px] rounded-[24px] text-Black-to-White/White-30 text-text-lg font-normal cursor-pointer border-[1px] border-Black-to-White/White-85 peer-checked:border-Green peer-checked:border-[2px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                  >
+                    <p>Доставка</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[32px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <h1 class="text-text3236 font-bold">
+            Добавить организацию в отображение баннеров
+          </h1>
+          <div class="flex gap-[16px]">
+            <div
+              tabindex="0"
+              class="text-text-black flex items-center w-[328px] gap-[4px] px-[16px] py-[8px] rounded-[12px] border-[1px] border-color-input border-solid bg-color-input transition duration-1 ease-out hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus-within:border-black/40 focus:outline-none"
+            >
+              <input
+                tabindex="0"
+                placeholder="Выбрать точку"
+                class="min-w-0 flex-1 p-1 h-[24px] rounded-[4px] bg-color-input font-normal focus:outline-none appearance-none"
+              />
+              <img
+                src="./img/keyboard_arrow_down.svg"
+                alt="arrow down"
+                class="w-[24px] h-[24px] flex-shrink-0"
+              />
+            </div>
+            <button
+              class="self-end flex items-center justify-center min-w-fit h-[44px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-lg font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+            >
+              <img
+                src="./img/add_white.svg"
+                alt="add"
+                class="w-[24px] h-[24px]"
+              />
+              Добавить
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[32px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <h1 class="text-text3236 font-bold">Добавленные организации</h1>
+          <div class="flex flex-col gap-[8px] flex-1">
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">ул. Кирова, 26</p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">ул. Набережная, 18</p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">ул. Омелькова, 93</p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">ул. Горького, 7а</p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">Свято-Троицкий бульвар, 1</p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">Народный бульвар, 90</p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">
+                ТРК «Мега Гринн», пр-т Богдана Хмельницкого, 137Т
+              </p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">
+                МТРК «Сити Молл «Белгородский», ул. Щорса, 64
+              </p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">Свято-Троицкий бульвар, 1</p>
+            </div>
+            <div
+              class="bg-Black-to-White/White-95 px-[16px] py-[8px] rounded-[12px]"
+            >
+              <p class="text-lg font-bold">Народный бульвар, 90</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

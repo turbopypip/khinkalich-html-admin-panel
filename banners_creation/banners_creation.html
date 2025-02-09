@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./output.css" />
+
+    <title>Create banner</title>
+  </head>
+  <body>
+    <div class="bg-background-main min-h-screen flex font-tilda justify-center">
+      <aside
+        class="h-screen py-[44px] px-[32px] gap-[32px] flex flex-col sticky top-0"
+      >
+        <div class="flex items-center gap-[16px] h-fit">
+          <img
+            src="./img/logo-frame.svg"
+            alt="logo"
+            class="w-[52px] h-[52px]"
+          />
+          <h1 class="font-bold text-xl text-text-black">Админка СХ</h1>
+        </div>
+        <div class="flex flex-col gap-[8px] text-text-buttons-gray">
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/iiko+fill.svg"
+              alt="iiko-logo"
+              class="w-[24px] h-[24px]"
+            />
+            iiko
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/store_+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заведения
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/picture+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Баннеры
+          </button>
+
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            Группы
+          </button>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            Отображение
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/khinkalibasket.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заказы
+          </button>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="px-[16px] text-lg font-bold text-text-black">Admin</p>
+          <button
+            class="flex items-center gap-[4px] px-[16px] py-[4px] text-lg font-semibold text-text-buttons-gray rounded-[12px] transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+          >
+            Выйти
+            <img
+              src="./img/logout.svg"
+              alt="logout"
+              class="w-[24px] h-[24px]"
+            />
+          </button>
+        </div>
+      </aside>
+
+      <div class="h-screen py-[44px] px-[4px] w-fit sticky top-0">
+        <div class="h-full w-[1px] bg-divider"></div>
+      </div>
+
+      <main
+        class="flex flex-col gap-[16px] w-full max-w-[1248px] py-[44px] px-[32px]"
+      >
+        <div class="grid grid-cols-7 gap-[16px]">
+          <div
+            class="flex flex-col gap-[16px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card col-span-7"
+          >
+            <h1 class="text-text3236 font-bold">Настройки баннера</h1>
+            <div class="flex flex-col gap-[8px] max-w-[328px]">
+              <h2 class="text-text-black text-restaurant_info font-bold">
+                Ссылка
+              </h2>
+              <input
+                placeholder="https://starikkhinkalich.ru/spring24"
+                type="text"
+                class="transition duration-1 ease-out border-[1px] border-color-input border-solid bg-color-input rounded-[16px] h-[44px] px-[16px] w-full hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus:outline-none text-text-black"
+              />
+            </div>
+            <div class="flex flex-col gap-[8px] max-w-[328px]">
+              <h2 class="text-text-black text-restaurant_info font-bold">
+                Позиция в списке
+              </h2>
+              <input
+                placeholder="1"
+                type="text"
+                class="transition duration-1 ease-out border-[1px] border-color-input border-solid bg-color-input rounded-[16px] h-[44px] px-[16px] w-full hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus:outline-none text-text-black"
+              />
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-[16px] bg-background-card rounded-[32px] p-[32px] shadow-iiko-card col-span-3"
+          >
+            <h1 class="text-xl font-bold">Десктоп</h1>
+            <div
+              class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+            >
+              <img
+                src="./img/spring_menu_banner__pc.png"
+                alt="downloaded photo"
+                class="border-[1px] border-text-black"
+              />
+              <button
+                class="self-center flex justify-center items-center min-w-[44px] w-fit h-[44px] p-[4px] rounded-[12px] bg-background-main transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+              >
+                <img
+                  src="./img/delete.svg"
+                  alt="delete"
+                  class="w-[24px] h-[24px]"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-[16px] bg-background-card rounded-[32px] p-[32px] shadow-iiko-card col-span-2"
+          >
+            <h1 class="text-xl font-bold">Мобилная версия</h1>
+            <div
+              class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+            >
+              <img
+                src="./img/spring_menu_banner__mobile.png"
+                alt="downloaded photo"
+                class="border-[1px] border-text-black"
+              />
+              <button
+                class="self-center flex justify-center items-center min-w-[44px] w-fit h-[44px] p-[4px] rounded-[12px] bg-background-main transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+              >
+                <img
+                  src="./img/delete.svg"
+                  alt="delete"
+                  class="w-[24px] h-[24px]"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-[16px] bg-background-card rounded-[32px] p-[32px] shadow-iiko-card col-span-2"
+          >
+            <h1 class="text-xl font-bold">Изображение новости</h1>
+            <div
+              class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+            >
+              <img
+                src="./img/spring_menu_banner__news.png"
+                alt="downloaded photo"
+                class="border-[1px] border-text-black"
+              />
+              <button
+                class="self-center flex justify-center items-center min-w-[44px] w-fit h-[44px] p-[4px] rounded-[12px] bg-background-main transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+              >
+                <img
+                  src="./img/delete.svg"
+                  alt="delete"
+                  class="w-[24px] h-[24px]"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-[16px] bg-background-card rounded-[32px] p-[32px] shadow-iiko-card col-span-7"
+          >
+            <h1 class="text-xl font-bold">Сторис</h1>
+            <div class="flex flex-wrap gap-[8px]">
+              <div
+                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+              >
+                <img
+                  src="./img/spring_menu_story.jpeg"
+                  alt="story"
+                  class="w-[200px] border-[1px] border-text-black"
+                />
+                <button
+                  class="self-center flex justify-center items-center min-w-[44px] w-fit h-[44px] p-[4px] rounded-[12px] bg-background-main transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+                >
+                  <img
+                    src="./img/delete.svg"
+                    alt="delete"
+                    class="w-[24px] h-[24px]"
+                  />
+                </button>
+              </div>
+              <div
+                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+              >
+                <div class="flex items-center justify-center h-full w-[200px]">
+                  <button
+                    class="self-center flex justify-center items-center min-w-[44px] w-fit h-[44px] p-[4px] rounded-[12px] bg-background-main transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+                  >
+                    <img
+                      src="./img/add.svg"
+                      alt="add"
+                      class="w-[24px] h-[24px]"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-[16px] bg-background-card rounded-[32px] p-[32px] shadow-iiko-card col-span-7"
+          >
+            <div class="flex justify-between">
+              <button
+                class="flex justify-center items-center w-fit h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-background-card text-Black-to-White/White-75-(Black-Disabled) text-lg font-semibold cursor-not-allowed"
+              >
+                <img
+                  src="./img/delete_disabled.svg"
+                  alt="delete"
+                  class="w-[24px] h-[24px]"
+                />
+                Удалить баннер
+              </button>
+              <div class="flex gap-[16px]">
+                <button
+                  class="flex justify-center items-center w-fit h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-background-main text-text-buttons-gray text-lg font-semibold transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+                >
+                  Отменить
+                </button>
+                <button
+                  class="flex justify-center items-center w-fit h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-Red/Red-Disabled text-Black-to-White/White-100 text-lg font-semibold cursor-not-allowed"
+                >
+                  <img
+                    src="./img/save+fill.svg"
+                    alt="delete"
+                    class="w-[24px] h-[24px]"
+                  />
+                  Сохранить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

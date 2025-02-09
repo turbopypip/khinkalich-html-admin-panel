@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+
+    <title>Orders</title>
+  </head>
+  <body>
+    <div class="bg-background-main min-h-screen flex font-tilda justify-center">
+      <aside
+        class="h-screen py-[44px] px-[32px] gap-[32px] flex flex-col sticky top-0"
+      >
+        <div class="flex items-center gap-[16px] h-fit">
+          <img
+            src="./img/logo-frame.svg"
+            alt="logo"
+            class="w-[52px] h-[52px]"
+          />
+          <h1 class="font-bold text-xl text-text-black">Админка СХ</h1>
+        </div>
+        <div class="flex flex-col gap-[8px] text-text-buttons-gray">
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/iiko+fill.svg"
+              alt="iiko-logo"
+              class="w-[24px] h-[24px]"
+            />
+            iiko
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/store_+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заведения
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/picture+fill.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Баннеры
+          </button>
+
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            Группы
+          </button>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[32px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            Отображение
+          </button>
+          <div class="h-[1px] w-[228px] bg-divider"></div>
+          <button
+            class="flex items-center h-[48px] rounded-[12px] px-[16px] py-[4px] gap-[4px] font-semibold text-buttons2020 hover:bg-Black-to-White/White-85 transition duration-1 ease-out active:bg-Black-to-White/White-80"
+          >
+            <img
+              src="./img/khinkalibasket.svg"
+              alt="store-logo"
+              class="w-[24px] h-[24px]"
+            />
+            Заказы
+          </button>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="px-[16px] text-lg font-bold text-text-black">Admin</p>
+          <button
+            class="flex items-center gap-[4px] px-[16px] py-[4px] text-lg font-semibold text-text-buttons-gray rounded-[12px] transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+          >
+            Выйти
+            <img
+              src="./img/logout.svg"
+              alt="logout"
+              class="w-[24px] h-[24px]"
+            />
+          </button>
+        </div>
+      </aside>
+
+      <div class="h-screen py-[44px] px-[4px] w-fit sticky top-0">
+        <div class="h-full w-[1px] bg-divider"></div>
+      </div>
+
+      <main
+        class="flex flex-col gap-[16px] w-full max-w-[1248px] py-[44px] px-[32px]"
+      >
+        <div
+          class="flex flex-col gap-[16px] w-full bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        >
+          <div class="flex justify-between">
+            <h1 class="text-text3236 font-bold">Заказы</h1>
+            <div
+              tabindex="0"
+              class="text-text-black flex items-center min-w-[220px] max-w-[328px] gap-[4px] px-[16px] py-[8px] rounded-[12px] border-[1px] border-color-input border-solid bg-color-input transition duration-1 ease-out hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus-within:border-black/40 focus:outline-none"
+            >
+              <input
+                tabindex="0"
+                placeholder="Поиск"
+                type="text"
+                class="p-1 h-[24px] rounded-[4px] bg-color-input font-normal focus:outline-none"
+              />
+              <img
+                src="./img/search.svg"
+                alt="search"
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
