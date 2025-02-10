@@ -2,9 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./output.css" />
-
     <title>Banners/display/modal v1</title>
   </head>
   <body class="font-tilda">
@@ -13,9 +10,9 @@
       class="fixed x-0 y-0 flex justify-center items-center min-h-screen w-screen bg-Background-modal backdrop-blur-modal"
     >
       <div
-        class="overflow-auto flex flex-col gap-[16px] max-h-[90vh] max-w-[1200px] bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+        class="flex flex-col gap-[16px] max-h-[90vh] max-w-[1200px] bg-background-card rounded-[32px] py-[32px] pr-[12px] shadow-iiko-card"
       >
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center px-[32px]">
           <h1 class="text-xl font-bold">
             Добавить организацию в отображение баннеров
           </h1>
@@ -26,258 +23,262 @@
           </button>
         </div>
         <div
-          tabindex="0"
-          class="text-text-black flex items-center w-[328px] gap-[4px] px-[16px] py-[8px] rounded-[12px] border-[1px] border-color-input border-solid bg-color-input transition duration-1 ease-out hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus-within:border-black/40 focus:outline-none"
+          class="flex flex-col gap-[16px] pl-[32px] pr-[12px] overflow-y-auto modal"
         >
-          <input
+          <div
             tabindex="0"
-            placeholder="Выбрать точку"
-            class="min-w-0 flex-1 p-1 h-[24px] rounded-[4px] bg-color-input font-normal focus:outline-none appearance-none"
-          />
-          <img
-            src="./img/keyboard_arrow_down.svg"
-            alt="arrow down"
-            class="w-[24px] h-[24px] flex-shrink-0"
-          />
-        </div>
-        <h1 class="text-xl font-bold">Группы баннеров</h1>
-        <div class="grid grid-cols-3 gap-[16px]">
-          <div
-            class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            class="text-text-black flex items-center w-[328px] gap-[4px] px-[16px] py-[8px] rounded-[12px] border-[1px] border-color-input border-solid bg-color-input transition duration-1 ease-out hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus-within:border-black/40 focus:outline-none"
           >
-            <div class="flex justify-between items-center">
-              <h2 class="text-lg font-bold">Акция</h2>
-              <button
-                class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
-              >
-                <img
-                  src="./img/add_white.svg"
-                  alt="add"
-                  class="w-[16px] h-[16px]"
-                />
-                Добавить баннер
-              </button>
+            <input
+              tabindex="0"
+              placeholder="Выбрать точку"
+              class="min-w-0 flex-1 p-1 h-[24px] rounded-[4px] bg-color-input font-normal focus:outline-none appearance-none"
+            />
+            <img
+              src="./img/keyboard_arrow_down.svg"
+              alt="arrow down"
+              class="w-[24px] h-[24px] flex-shrink-0"
+            />
+          </div>
+          <h1 class="text-xl font-bold">Группы баннеров</h1>
+          <div class="grid grid-cols-3 gap-[16px]">
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Акция</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/khinkali_with_pink_salmon_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="flex flex-col gap-[8px]">
-              <div
-                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
-              >
-                <img
-                  src="./img/khinkali_with_pink_salmon_banner.jpeg"
-                  alt="downloaded photo"
-                  class="w-full border-[1px] border-text-black"
-                />
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Постоянные 3шт</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/12_khinkali_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/khinkali_tail_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Открытие</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/Saransk_opening_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Сезонное</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/summer_menu_banner.png"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Дюжина 3 города</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/12_new_dishes_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Детское</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/children_menu_banner.jpeg"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
+            >
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Доставка</h2>
+                <button
+                  class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+                >
+                  <img
+                    src="./img/add_white.svg"
+                    alt="add"
+                    class="w-[16px] h-[16px]"
+                  />
+                  Добавить баннер
+                </button>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <div
+                  class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
+                >
+                  <img
+                    src="./img/free_delivery_banner.png"
+                    alt="downloaded photo"
+                    class="w-full border-[1px] border-text-black"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
-          >
-            <div class="flex justify-between items-center">
-              <h2 class="text-lg font-bold">Постоянные 3шт</h2>
-              <button
-                class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
-              >
-                <img
-                  src="./img/add_white.svg"
-                  alt="add"
-                  class="w-[16px] h-[16px]"
-                />
-                Добавить баннер
-              </button>
-            </div>
-            <div class="flex flex-col gap-[8px]">
-              <div
-                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
-              >
-                <img
-                  src="./img/12_khinkali_banner.jpeg"
-                  alt="downloaded photo"
-                  class="w-full border-[1px] border-text-black"
-                />
-              </div>
-            </div>
-            <div class="flex flex-col gap-[8px]">
-              <div
-                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
-              >
-                <img
-                  src="./img/khinkali_tail_banner.jpeg"
-                  alt="downloaded photo"
-                  class="w-full border-[1px] border-text-black"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
-          >
-            <div class="flex justify-between items-center">
-              <h2 class="text-lg font-bold">Открытие</h2>
-              <button
-                class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
-              >
-                <img
-                  src="./img/add_white.svg"
-                  alt="add"
-                  class="w-[16px] h-[16px]"
-                />
-                Добавить баннер
-              </button>
-            </div>
-            <div class="flex flex-col gap-[8px]">
-              <div
-                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
-              >
-                <img
-                  src="./img/Saransk_opening_banner.jpeg"
-                  alt="downloaded photo"
-                  class="w-full border-[1px] border-text-black"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
-          >
-            <div class="flex justify-between items-center">
-              <h2 class="text-lg font-bold">Сезонное</h2>
-              <button
-                class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
-              >
-                <img
-                  src="./img/add_white.svg"
-                  alt="add"
-                  class="w-[16px] h-[16px]"
-                />
-                Добавить баннер
-              </button>
-            </div>
-            <div class="flex flex-col gap-[8px]">
-              <div
-                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
-              >
-                <img
-                  src="./img/summer_menu_banner.png"
-                  alt="downloaded photo"
-                  class="w-full border-[1px] border-text-black"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
-          >
-            <div class="flex justify-between items-center">
-              <h2 class="text-lg font-bold">Дюжина 3 города</h2>
-              <button
-                class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
-              >
-                <img
-                  src="./img/add_white.svg"
-                  alt="add"
-                  class="w-[16px] h-[16px]"
-                />
-                Добавить баннер
-              </button>
-            </div>
-            <div class="flex flex-col gap-[8px]">
-              <div
-                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
-              >
-                <img
-                  src="./img/12_new_dishes_banner.jpeg"
-                  alt="downloaded photo"
-                  class="w-full border-[1px] border-text-black"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
-          >
-            <div class="flex justify-between items-center">
-              <h2 class="text-lg font-bold">Детское</h2>
-              <button
-                class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
-              >
-                <img
-                  src="./img/add_white.svg"
-                  alt="add"
-                  class="w-[16px] h-[16px]"
-                />
-                Добавить баннер
-              </button>
-            </div>
-            <div class="flex flex-col gap-[8px]">
-              <div
-                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
-              >
-                <img
-                  src="./img/children_menu_banner.jpeg"
-                  alt="downloaded photo"
-                  class="w-full border-[1px] border-text-black"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col max-w-[384px] rounded-[16px] bg-Black-to-White/White-100 p-[16px] gap-[16px] shadow-iiko-card"
-          >
-            <div class="flex justify-between items-center">
-              <h2 class="text-lg font-bold">Доставка</h2>
-              <button
-                class="self-end flex items-center justify-center min-w-fit h-[28px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-text1420 font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
-              >
-                <img
-                  src="./img/add_white.svg"
-                  alt="add"
-                  class="w-[16px] h-[16px]"
-                />
-                Добавить баннер
-              </button>
-            </div>
-            <div class="flex flex-col gap-[8px]">
-              <div
-                class="flex flex-col p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red"
-              >
-                <img
-                  src="./img/free_delivery_banner.png"
-                  alt="downloaded photo"
-                  class="w-full border-[1px] border-text-black"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex justify-between">
-          <button
-            class="flex justify-center items-center w-fit h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-background-card text-text-buttons-gray text-lg font-semibold transition duration-1 ease-out hover:text-Red/Red-Hover active:text-Red/Red-Click"
-          >
-            Отменить
-          </button>
+          <div class="flex justify-between">
+            <button
+              class="flex justify-center items-center w-fit h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-background-card text-text-buttons-gray text-lg font-semibold transition duration-1 ease-out hover:text-Red/Red-Hover active:text-Red/Red-Click"
+            >
+              Отменить
+            </button>
 
-          <div class="flex gap-[16px]">
-            <button
-              class="flex justify-center items-center h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-background-main text-text-buttons-gray text-lg font-semibold transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
-            >
-              <img
-                src="./img/delete.svg"
-                alt="delete"
-                class="w-[24px] h-[24px]"
-              />
-              Удалить
-            </button>
-            <button
-              class="self-end flex items-center justify-center min-w-fit h-[44px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-lg font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
-            >
-              <img
-                src="./img/save+fill.svg"
-                alt="add"
-                class="w-[24px] h-[24px]"
-              />
-              Сохранить
-            </button>
+            <div class="flex gap-[16px]">
+              <button
+                class="flex justify-center items-center h-[44px] px-[16px] py-[4px] gap-[4px] rounded-[12px] bg-background-main text-text-buttons-gray text-lg font-semibold transition duration-1 ease-out hover:bg-Black-to-White/White-85 active:bg-Black-to-White/White-80"
+              >
+                <img
+                  src="./img/delete.svg"
+                  alt="delete"
+                  class="w-[24px] h-[24px]"
+                />
+                Удалить
+              </button>
+              <button
+                class="self-end flex items-center justify-center min-w-fit h-[44px] bg-Red px-[16px] py-[4px] rounded-[12px] text-white text-lg font-semibold hover:bg-Red/Red-Hover active:bg-Red/Red-Click transition duration-1 ease-out"
+              >
+                <img
+                  src="./img/save+fill.svg"
+                  alt="add"
+                  class="w-[24px] h-[24px]"
+                />
+                Сохранить
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -12,3 +12,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(230, 230, 230, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}

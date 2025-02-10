@@ -105,9 +105,9 @@
         class="fixed x-0 y-0 flex justify-center items-center h-screen w-screen bg-Background-modal backdrop-blur-modal"
       >
         <div
-          class="flex flex-col gap-[16px] max-w-[1200px] bg-background-card rounded-[32px] p-[32px] shadow-iiko-card"
+          class="flex flex-col gap-[16px] max-h-[90vh] max-w-[1200px] bg-background-card rounded-[32px] py-[32px] pr-[12px] shadow-iiko-card"
         >
-          <div class="flex justify-between items-center">
+          <div class="flex justify-between items-center pl-[32px]">
             <h1 class="text-xl font-bold">Добавить Баннер</h1>
             <button
               class="flex justify-center items-center w-[48px] h-[48px] bg-background-card text-text-buttons-gray text-restaurant_info font-semibold transition duration-1 ease-out hover:text-Red/Red-Hover active:text-Red/Red-Click"
@@ -115,128 +115,132 @@
               <img src="./img/close.svg" alt="add" class="w-[24px] h-[24px]" />
             </button>
           </div>
-          <div class="grid grid-cols-3 gap-[16px]">
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/main.png"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/spring_menu_banner.png"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/12_khinkali_banner.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/Saransk_opening_banner.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/free_delivery_banner.png"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/12_new_dishes_banner_2.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/where_khinkali_was_born_banner.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/4_khachapuri_banner.png"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/12_new_dishes_banner.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/children_menu_banner.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/khinkali_with_pink_salmon_banner.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/khinkali_tail_banner.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
-            </div>
-            <div
-              class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
-            >
-              <img
-                src="./img/children_master_classes_banner.jpeg"
-                alt="downloaded photo"
-                class="w-full border-[1px] border-text-black"
-              />
+          <div
+            class="flex flex-col gap-[16px] pl-[32px] pr-[12px] overflow-y-auto modal"
+          >
+            <div class="grid grid-cols-3 gap-[16px] pl-[32px] pr-[12px]">
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/main.png"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/spring_menu_banner.png"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/12_khinkali_banner.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/Saransk_opening_banner.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/free_delivery_banner.png"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/12_new_dishes_banner_2.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/where_khinkali_was_born_banner.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/4_khachapuri_banner.png"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/12_new_dishes_banner.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/children_menu_banner.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/khinkali_with_pink_salmon_banner.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/khinkali_tail_banner.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
+              <div
+                class="flex flex-col w-[300px] p-[8px] gap-[8px] rounded-[12px] border-[1px] border-dashed border-Red col-span-1"
+              >
+                <img
+                  src="./img/children_master_classes_banner.jpeg"
+                  alt="downloaded photo"
+                  class="w-full border-[1px] border-text-black"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- MODAL END -->
       <main
         class="flex flex-col gap-[32px] w-full max-w-[1248px] py-[44px] px-[32px]"
       >
