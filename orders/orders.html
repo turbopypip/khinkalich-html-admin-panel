@@ -121,6 +121,184 @@
               />
             </div>
           </div>
+          <div
+            tabindex="0"
+            class="text-text-black flex items-center w-[328px] gap-[4px] px-[16px] py-[8px] rounded-[12px] border-[1px] border-color-input border-solid bg-color-input transition duration-1 ease-out hover:border-Black-to-White/White-60 focus:border-Black-to-White/White-40 focus-within:border-black/40 focus:outline-none"
+          >
+            <input
+              tabindex="0"
+              placeholder="Выбрать точку"
+              class="min-w-0 flex-1 p-1 h-[24px] rounded-[4px] bg-color-input font-normal focus:outline-none appearance-none"
+            />
+            <img
+              src="./img/keyboard_arrow_down.svg"
+              alt="arrow down"
+              class="w-[24px] h-[24px] flex-shrink-0"
+            />
+          </div>
+          <div class="flex gap-[44px]">
+            <div class="flex flex-col gap-[8px]">
+              <h2 class="text-lg font-bold">Статус</h2>
+              <label>
+                <input type="checkbox" class="peer hidden" />
+                <div
+                  class="flex items-center justify-between gap-[8px] px-[16px] py-[4px] w-fit rounded-[24px] text-Black-to-White/White-30 text-restaurant_info font-normal cursor-pointer border-[2px] m-0 border-Green peer-checked:border-Black-to-White/White-85 peer-checked:border-[1px] peer-checked:m-[1px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                >
+                  <img src="./img/check_circle_+fill.svg" alt="check_circle" />
+                  <p>Завершён</p>
+                </div>
+              </label>
+              <label>
+                <input type="checkbox" class="peer hidden" />
+                <div
+                  class="flex items-center justify-between gap-[8px] px-[16px] py-[4px] w-fit rounded-[24px] text-Black-to-White/White-30 text-restaurant_info font-normal cursor-pointer border-[2px] m-0 border-Green peer-checked:border-Black-to-White/White-85 peer-checked:border-[1px] peer-checked:m-[1px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                >
+                  <img src="./img/refresh.svg" alt="refresh" />
+                  <p>В обработке</p>
+                </div>
+              </label>
+              <label>
+                <input type="checkbox" class="peer hidden" />
+                <div
+                  class="flex items-center justify-between gap-[8px] px-[16px] py-[4px] w-fit rounded-[24px] text-Black-to-White/White-30 text-restaurant_info font-normal cursor-pointer border-[2px] m-0 border-Green peer-checked:border-Black-to-White/White-85 peer-checked:border-[1px] peer-checked:m-[1px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                >
+                  <img src="./img/warning_+fill.svg" alt="warning" />
+                  <p>Ошибка</p>
+                </div>
+              </label>
+            </div>
+            <div class="flex flex-col gap-[8px]">
+              <h2 class="text-lg font-bold">Оплата</h2>
+              <label>
+                <input type="checkbox" class="peer hidden" />
+                <div
+                  class="flex items-center justify-between gap-[8px] px-[16px] py-[4px] w-fit rounded-[24px] text-Black-to-White/White-30 text-restaurant_info font-normal cursor-pointer border-[1px] m-[1px] border-border-Black-to-White/White-85 peer-checked:border-Green peer-checked:border-[2px] peer-checked:m-0 transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                >
+                  <img src="./img/cash.svg" alt="cash" />
+                  <p>Наличными</p>
+                </div>
+              </label>
+              <label>
+                <input type="checkbox" class="peer hidden" />
+                <div
+                  class="flex items-center justify-between gap-[8px] px-[16px] py-[4px] w-fit rounded-[24px] text-Black-to-White/White-30 text-restaurant_info font-normal cursor-pointer border-[2px] m-0 border-Green peer-checked:border-Black-to-White/White-85 peer-checked:border-[1px] peer-checked:m-[1px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                >
+                  <img src="./img/credit_card.svg" alt="credit card" />
+                  <p>Картой</p>
+                </div>
+              </label>
+              <label>
+                <input type="checkbox" class="peer hidden" />
+                <div
+                  class="flex items-center justify-between gap-[8px] px-[16px] py-[4px] w-fit rounded-[24px] text-Black-to-White/White-30 text-restaurant_info font-normal cursor-pointer border-[2px] m-0 border-Green peer-checked:border-Black-to-White/White-85 peer-checked:border-[1px] peer-checked:m-[1px] transition duration-200 ease-out hover:bg-Black-to-White/White-95"
+                >
+                  <img src="./img/PayMaster.svg" alt="pay master" />
+                  <p>Онлайн</p>
+                </div>
+              </label>
+            </div>
+          </div>
+          <table class="text-left text-restaurant_info">
+            <tr class="font-bold bg-Table-header">
+              <th>№ заказа</th>
+              <th>точка</th>
+              <th>ID заказа</th>
+              <th>статус</th>
+              <th>адрес/время</th>
+              <th>телефон</th>
+              <th>сумма</th>
+            </tr>
+            <tr
+              class="border-b-[1px] border-Black-to-White/White-75-(Black-Disabled) text-text1416"
+            >
+              <td class="font-bold">121133</td>
+              <td class="pl-[16px] py-0 pr-0">пр-т Нахимова, 5</td>
+              <td class="pl-[16px] py-0 pr-0">
+                <p class="text-sm">c52806e2-c0bf-40da-b3b3-331980abb28a</p>
+                <p>9b65fa8447d19f2d</p>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">
+                <div
+                  class="flex items-center gap-[4px] px-[12px] py-[4px] bg-Yellow rounded-[24px] h-[28px] w-fit"
+                >
+                  <img
+                    src="./img/refresh_white.svg"
+                    alt="refresh"
+                    class="w-[16px] h-[16px]"
+                  />
+                  <p class="font-semibold text-Black-to-White/White-100">
+                    В обработке
+                  </p>
+                </div>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">
+                <p>Китицынская, 4</p>
+                <p>2025-02-13 11:24:10</p>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">+79782737606</td>
+              <td>395</td>
+            </tr>
+            <tr
+              class="border-b-[1px] border-Black-to-White/White-75-(Black-Disabled) text-text1416"
+            >
+              <td class="font-bold">121133</td>
+              <td class="pl-[16px] py-0 pr-0">пр-т Нахимова, 5</td>
+              <td class="pl-[16px] py-0 pr-0">
+                <p class="text-sm">c52806e2-c0bf-40da-b3b3-331980abb28a</p>
+                <p>9b65fa8447d19f2d</p>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">
+                <div
+                  class="flex items-center gap-[4px] px-[12px] py-[4px] bg-Green rounded-[24px] h-[28px] w-fit"
+                >
+                  <img
+                    src="./img/check_circle_+fill_white.svg"
+                    alt="refresh"
+                    class="w-[16px] h-[16px]"
+                  />
+                  <p class="font-semibold text-Black-to-White/White-100">
+                    Завершён
+                  </p>
+                </div>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">
+                <p>Китицынская, 4</p>
+                <p>2025-02-13 11:24:10</p>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">+79782737606</td>
+              <td>395</td>
+            </tr>
+            <tr
+              class="border-b-[1px] border-Black-to-White/White-75-(Black-Disabled) text-text1416"
+            >
+              <td class="font-bold">121133</td>
+              <td class="pl-[16px] py-0 pr-0">пр-т Нахимова, 5</td>
+              <td class="pl-[16px] py-0 pr-0">
+                <p class="text-sm">c52806e2-c0bf-40da-b3b3-331980abb28a</p>
+                <p>9b65fa8447d19f2d</p>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">
+                <div
+                  class="flex items-center gap-[4px] px-[12px] py-[4px] bg-Red rounded-[24px] h-[28px] w-fit"
+                >
+                  <img
+                    src="./img/warning_+fill_white.svg"
+                    alt="refresh"
+                    class="w-[16px] h-[16px]"
+                  />
+                  <p class="font-semibold text-Black-to-White/White-100">
+                    Ошибка
+                  </p>
+                </div>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">
+                <p>Китицынская, 4</p>
+                <p>2025-02-13 11:24:10</p>
+              </td>
+              <td class="pl-[16px] py-0 pr-0">+79782737606</td>
+              <td>395</td>
+            </tr>
+          </table>
         </div>
       </main>
     </div>
